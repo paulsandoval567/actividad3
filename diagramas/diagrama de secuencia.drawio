@@ -1,0 +1,202 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.4.0" pages="3">
+  <diagram name="Secuencia - Registrar Prestamo" id="0">
+    <mxGraphModel dx="1453" dy="775" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="2000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3f6utQMADgT4QxoheREv-13" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="PRESTAMO DE LIBRO" vertex="1">
+          <mxGeometry height="777" width="100" x="618" y="633" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-14" parent="3f6utQMADgT4QxoheREv-13" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#808080;" value="" vertex="1">
+          <mxGeometry height="642" width="10" x="45" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-15" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="BIBLIOTECARIO" vertex="1">
+          <mxGeometry height="701" width="100" x="380" y="633" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-16" parent="3f6utQMADgT4QxoheREv-15" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="442" width="10" x="45" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-17" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="ESTUDIANTE" vertex="1">
+          <mxGeometry height="684" width="100" x="1530" y="646" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-20" edge="1" parent="1" source="3f6utQMADgT4QxoheREv-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="3f6utQMADgT4QxoheREv-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ingresar sus datos correspondientes" vertex="1">
+          <mxGeometry height="60" width="120" x="1517" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-23" edge="1" parent="1" source="3f6utQMADgT4QxoheREv-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3f6utQMADgT4QxoheREv-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SOLICITAR PRESTAMO" vertex="1">
+          <mxGeometry height="60" width="120" x="1341" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-21" edge="1" parent="1" source="3f6utQMADgT4QxoheREv-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="3f6utQMADgT4QxoheREv-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="541" y="783" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="registrarPrestamo()" vertex="1">
+          <mxGeometry height="30" width="60" x="470" y="906" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ingresar datos del estudiante" vertex="1">
+          <mxGeometry height="60" width="120" x="613" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Verificar multas" vertex="1">
+          <mxGeometry height="60" width="120" x="613" y="846" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Verificar limite de prestamos" vertex="1">
+          <mxGeometry height="60" width="120" x="611" y="912" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Verificar disponibilidad del libro" vertex="1">
+          <mxGeometry height="60" width="120" x="613" y="1041" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Calcular fecha de devolucion" vertex="1">
+          <mxGeometry height="60" width="120" x="613" y="1113" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="crear prestamo" vertex="1">
+          <mxGeometry height="60" width="120" x="611" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="cambiar estado del libro a prestado" vertex="1">
+          <mxGeometry height="60" width="120" x="611" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="REGISTRAR PRESTAMO" vertex="1">
+          <mxGeometry height="30" width="60" x="641" y="521" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-33" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="DEVOLUCION DE LIBRO" vertex="1">
+          <mxGeometry height="773" width="100" x="795" y="633" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-34" parent="3f6utQMADgT4QxoheREv-33" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#808080;" value="" vertex="1">
+          <mxGeometry height="557" width="10" x="45" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;registrarDevolucion()&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="473" y="962" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="buscar prestamo" vertex="1">
+          <mxGeometry height="60" width="120" x="781" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="registrar devolucion" vertex="1">
+          <mxGeometry height="60" width="120" x="781" y="852" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="verificar multa" vertex="1">
+          <mxGeometry height="60" width="120" x="785" y="922" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="cambiar estado de libro a disponible" vertex="1">
+          <mxGeometry height="60" width="120" x="785" y="1033" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-41" edge="1" parent="1" source="3f6utQMADgT4QxoheREv-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="3f6utQMADgT4QxoheREv-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="584" y="1050" as="sourcePoint" />
+            <mxPoint x="817" y="1128" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-44" edge="1" parent="1" source="3f6utQMADgT4QxoheREv-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3f6utQMADgT4QxoheREv-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="DEVOLVER LIBRO" vertex="1">
+          <mxGeometry height="60" width="120" x="1315" y="987" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-43" edge="1" parent="1" source="3f6utQMADgT4QxoheREv-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="3f6utQMADgT4QxoheREv-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1667" y="1132" as="sourcePoint" />
+            <mxPoint x="1611" y="1132" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="REGISTRAR&amp;nbsp; DEVOLUCION" vertex="1">
+          <mxGeometry height="30" width="60" x="1539" y="546" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-46" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="RENOVAR PRESTAMO" vertex="1">
+          <mxGeometry height="773" width="100" x="1015" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-47" parent="3f6utQMADgT4QxoheREv-46" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#808080;" value="" vertex="1">
+          <mxGeometry height="557" width="10" x="45" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="buscar prestamo" vertex="1">
+          <mxGeometry height="60" width="120" x="1010" y="737" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="verificar estado del prestamo" vertex="1">
+          <mxGeometry height="60" width="120" x="1010" y="852" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="actualizar fecha de devolucion" vertex="1">
+          <mxGeometry height="60" width="120" x="1010" y="1033" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="cambiar estado de libro a renovado" vertex="1">
+          <mxGeometry height="60" width="120" x="1010" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-53" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="RENOVAR PRESTAMO" vertex="1">
+          <mxGeometry height="30" width="60" x="1030" y="527" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="RENOVAR PRESTAMO" vertex="1">
+          <mxGeometry height="60" width="120" x="1315" y="1125" as="geometry" />
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-55" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="3f6utQMADgT4QxoheREv-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1579" y="1126" as="sourcePoint" />
+            <mxPoint x="1611" y="1270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3f6utQMADgT4QxoheREv-56" edge="1" parent="1" source="3f6utQMADgT4QxoheREv-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="3f6utQMADgT4QxoheREv-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1727" y="1122" as="sourcePoint" />
+            <mxPoint x="1256" y="1124" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-KCRiw1VeOL4XHLv-zzr-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="renovarPrestamo()" vertex="1">
+          <mxGeometry height="30" width="60" x="464" y="992" as="geometry" />
+        </mxCell>
+        <mxCell id="-KCRiw1VeOL4XHLv-zzr-2" edge="1" parent="1" source="3f6utQMADgT4QxoheREv-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="3f6utQMADgT4QxoheREv-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="621" y="1083" as="sourcePoint" />
+            <mxPoint x="940" y="1154" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Secuencia - Renovar Prestamo" id="1">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="actor2" value="Bibliotecario" style="shape=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="obj4" value="prestamo:Prestamo" style="shape=rectangle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="obj5" value="renovacion:Renovacion" style="shape=rectangle;" vertex="1" parent="1">
+          <mxGeometry x="600" y="100" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" value="validarRenovacion()" style="endArrow=block;" edge="1" parent="1" source="actor2" target="obj4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m5" value="aplicarRenovacion()" style="endArrow=block;" edge="1" parent="1" source="actor2" target="obj5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Secuencia - Registrar Devolucion" id="2">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="actor3" value="Bibliotecario" style="shape=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="obj6" value="prestamo:Prestamo" style="shape=rectangle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="obj7" value="multa:Multa" style="shape=rectangle;" vertex="1" parent="1">
+          <mxGeometry x="650" y="100" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m6" value="registrarDevolucion()" style="endArrow=block;" edge="1" parent="1" source="actor3" target="obj6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m7" value="calcularMulta()" style="endArrow=block;" edge="1" parent="1" source="actor3" target="obj7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

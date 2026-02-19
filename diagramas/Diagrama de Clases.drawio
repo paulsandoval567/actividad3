@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.4.0">
+  <diagram name="Diagrama de Clases Biblioteca Completo" id="0">
+    <mxGraphModel dx="1026" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="usuario&lt;br&gt;&lt;div&gt;----------------------------------------------------------------&lt;/div&gt;&lt;div&gt;&amp;nbsp;- id: int - nombre: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;- apellido: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;- email: String&lt;/div&gt;&lt;div&gt;&amp;nbsp;- estado: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;----------------------------------------------------------------&lt;/div&gt;&lt;div&gt;+ verificarMultas()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ verificarLimitePrestamos()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="260" x="160" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Bibliotecario&amp;nbsp;&lt;div&gt;----------------------------------------------------------------&lt;/div&gt;&lt;div&gt;- codigoEmpleado: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;----------------------------------------------------------------&lt;/div&gt;&lt;div&gt;+ registrarPrestamo()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ registrarDevolucion()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ renovarPrestamo()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="260" x="160" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Estudiante&amp;nbsp;&lt;div&gt;----------------------------------------------------------------&lt;/div&gt;&lt;div&gt;- codigoEstudiante: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;- carrera: String&lt;/div&gt;&lt;div&gt;&amp;nbsp;- semestre: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;---------------------------------------------------------------&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ consultarPrestamos()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="260" x="460" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Libro&amp;nbsp;&lt;div&gt;----------------------------------------------------------------&lt;/div&gt;&lt;div&gt;- idLibro: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;- titulo: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;- autor: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;- estado: String&lt;/div&gt;&lt;div&gt;&amp;nbsp;---------------------------------------------------------------&lt;/div&gt;&lt;div&gt;+ verificarDisponibilidad()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ cambiarEstado()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="260" x="810" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Prestamo&amp;nbsp;&lt;div&gt;---------------------------------------------------------------&amp;nbsp;&lt;/div&gt;&lt;div&gt;- idPrestamo: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;- fechaPrestamo: Date&amp;nbsp;&lt;/div&gt;&lt;div&gt;- fechaDevolucion: Date&amp;nbsp;&lt;/div&gt;&lt;div&gt;- estado: String&lt;/div&gt;&lt;div&gt;&amp;nbsp;---------------------------------------------------------------&lt;/div&gt;&lt;div&gt;+ calcularFechaDevolucion()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ actualizarEstado()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="260" x="810" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Multa&amp;nbsp;&lt;div&gt;---------------------------------------------------------------&amp;nbsp;&lt;/div&gt;&lt;div&gt;- idMulta: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;- monto: double&amp;nbsp;&lt;/div&gt;&lt;div&gt;- diasRetraso: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;- estado: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;----------------------------------------------------------------&lt;/div&gt;&lt;div&gt;+ calcularMulta()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ pagarMulta()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="260" x="1170" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Renovacion&amp;nbsp;&lt;div&gt;----------------------------------------------------------------&lt;/div&gt;&lt;div&gt;- idRenovacion: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;- fechaRenovacion: Date&amp;nbsp;&lt;/div&gt;&lt;div&gt;- nuevaFechaDevolucion: Date&amp;nbsp;&lt;/div&gt;&lt;div&gt;---------------------------------------------------------------&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ aplicarRenovacion()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="260" x="1160" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Devolucion&amp;nbsp;&lt;div&gt;---------------------------------------------------------------&amp;nbsp;&lt;/div&gt;&lt;div&gt;- idDevolucion: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;- fechaRealDevolucion: Date&lt;/div&gt;&lt;div&gt;&amp;nbsp;---------------------------------------------------------------&lt;/div&gt;&lt;div&gt;+ registrarDevolucion()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="260" x="810" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Catalogo&amp;nbsp;&lt;div&gt;----------------------------------------------------------------&lt;/div&gt;&lt;div&gt;&amp;nbsp;- idCatalogo: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;---------------------------------------------------------------&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ buscarLibro()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ listarDisponibles()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="260" x="480" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="PoliticaPrestamo&amp;nbsp;&lt;div&gt;---------------------------------------------------------------&amp;nbsp;&lt;/div&gt;&lt;div&gt;- maxPrestamos: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;- diasPrestamo: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;- multaPorDia: double&amp;nbsp;&lt;/div&gt;&lt;div&gt;----------------------------------------------------------------&lt;/div&gt;&lt;div&gt;+ validarLimite()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ obtenerDiasPrestamo()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="260" x="1160" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="3" style="endArrow=block;endFill=0;" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="4" style="endArrow=block;endFill=0;" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="4" style="endArrow=none;" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" source="6" style="endArrow=none;" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" source="6" style="endArrow=none;" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" source="6" style="endArrow=none;" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="6" style="endArrow=none;" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" source="10" style="endArrow=none;" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" source="11" style="endArrow=none;" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="710" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*" vertex="1">
+          <mxGeometry height="30" width="60" x="760" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="930" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*" vertex="1">
+          <mxGeometry height="30" width="60" x="930" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="1060" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..1" vertex="1">
+          <mxGeometry height="30" width="60" x="1120" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="1030" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*" vertex="1">
+          <mxGeometry height="30" width="60" x="1110" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="920" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="920" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="720" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*" vertex="1">
+          <mxGeometry height="30" width="60" x="760" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="1130" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="E6GFP-BnvfAvleWL228I-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*" vertex="1">
+          <mxGeometry height="30" width="60" x="1070" y="680" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
